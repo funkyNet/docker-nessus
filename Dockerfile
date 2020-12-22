@@ -1,11 +1,7 @@
-FROM debian:latest
+FROM bitnami/minideb:latest
 
-MAINTAINER treadie.io
-
-ENV LICENCE AddYourLicenceHere
-
-RUN apt-get update && apt-get install -y wget
-RUN wget -O nessus.deb --user-agent='Mozillqa/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0' --header='Upgrade-Insecure-Requests: 1' 'http://downloads.nessus.org/nessus3dl.php?file=Nessus-6.10.7-debian6_amd64.deb&licence_accept=yes&t=c1318602f47f498479483ca3a64a0ff5'
+RUN apt-get update && apt-get install -y --no-install-recommends wget && \
+wget --no-check-certificate -O nessus.deb https://www.tenable.com/downloads/api/v1/public/pages/nessus/downloads/12207/download?i_agree_to_tenable_license_agreement=true
 RUN dpkg -i nessus.deb && rm nessus.deb
 
 EXPOSE 8834
