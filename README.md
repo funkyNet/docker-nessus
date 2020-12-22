@@ -7,7 +7,7 @@ The Most Widely-Deployed Vulnerability Assessment Solution
 Nessus has been deployed for vulnerability, configuration and compliance assessments by more than one million users across the globe. Nessus prevents network attacks by identifying the vulnerabilities and configuration issues that hackers use to penetrate your network.
 
 ## versions
-`treadie/nessus:latest` - Nessus vulnerability scanner 6.10.7
+`funkynet/nessus:latest` - Nessus vulnerability scanner 6.10.7
 
 ## How
 
