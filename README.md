@@ -1,4 +1,4 @@
-# Docker-Nessus
+# Nessus
 Docker build for Tenable's Nessus Vulnerability Scanner
 
 ## Nessus
