@@ -10,4 +10,4 @@ EXPOSE 8834
 
 ENTRYPOINT ["/opt/nessus/sbin/nessusd"]
 
-VOLUME ["nessus:/opt/nessus/etc/nessus/"]
+VOLUME ["/opt/nessus/etc/nessus/"]
